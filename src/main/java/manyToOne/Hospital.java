@@ -1,9 +1,12 @@
 package manyToOne;
 
+import java.util.List;
+
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
 import javax.persistence.Id;
+import javax.persistence.OneToMany;
 
 @Entity
 public class Hospital {
@@ -12,7 +15,15 @@ public class Hospital {
 	private int id;
 	private String name;
 	private String website;
+	@OneToMany(mappedBy = "hospital")
+	List<Branch> branch;
 	
+	public List<Branch> getBranch() {
+		return branch;
+	}
+	public void setBranch(List<Branch> branch) {
+		this.branch = branch;
+	}
 	public int getId() {
 		return id;
 	}

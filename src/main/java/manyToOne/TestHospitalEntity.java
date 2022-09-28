@@ -9,17 +9,17 @@ public class TestHospitalEntity {
 
 	public static void main(String[] args) {
 		Hospital hospital = new Hospital();
-		hospital.setName("Nimhans");
-		hospital.setWebsite("nimhans@gmail.com");
+		hospital.setName("Apollo");
+		hospital.setWebsite("apollo@gmail.com");
 		
 		Branch branch = new Branch();
-		branch.setLocation("rajajinagar");
+		branch.setLocation("baanerughatta");
 		branch.setCity("bangalore");
 		branch.setPhone(9113250629l);
 		branch.setHospital(hospital);
 		
 		Branch branch1 = new Branch();
-		branch1.setLocation("banashankari");
+		branch1.setLocation("yashavantapur");
 		branch1.setCity("bangalore");
 		branch1.setPhone(9916129483l);
 		branch1.setHospital(hospital);
