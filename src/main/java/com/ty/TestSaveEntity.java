@@ -13,25 +13,22 @@ public class TestSaveEntity {
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
 		Mobile mobile = new Mobile();
-		mobile.setName("Nokia 500");
-		mobile.setCost(600);
+		mobile.setName("Samsung 300");
+		mobile.setCost(300);
 		
 		Sim sim1 = new Sim();
-		sim1.setName("Airtel sim");
-		sim1.setProvider("Airtel");
-		sim1.setMobile(mobile);
+		sim1.setName("Vodafone sim");
+		sim1.setProvider("Vodafone");
 		
 		Sim sim2 = new Sim();
-		sim2.setName("Jio sim");
-		sim2.setProvider("Jio");
-		sim2.setMobile(mobile);
+		sim2.setName("BSNL sim");
+		sim2.setProvider("BSNL");
 		
 		List<Sim> sims = new ArrayList<Sim>();
 		sims.add(sim1);
 		sims.add(sim2);
 		
 		mobile.setSims(sims);
-		
 		
 		EntityManagerFactory entityManagerFactory = Persistence.createEntityManagerFactory("vikas");
 		EntityManager entityManager = entityManagerFactory.createEntityManager();
