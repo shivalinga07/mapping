@@ -22,8 +22,7 @@ public class TestPersonPan {
 		pan.setNumber("KNG12TY56");
 		pan.setType("business");
 		
-	//	person.setPan(pan);
-		pan.setPerson(person);
+		person.setPan(pan);
 		
 		entityTransaction.begin();
 		entityManager.persist(person);

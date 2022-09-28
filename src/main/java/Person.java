@@ -11,7 +11,7 @@ public class Person {
 	private int id;
 	private String name;
 	private String gender;
-	@OneToOne(mappedBy = "person")
+	@OneToOne
 	 Pan pan;
 	public int getId() {
 		return id;
